@@ -1,0 +1,84 @@
+configuration {
+    display-drun:                   "应用程序";
+    display-window:                 "窗口";
+    show-icons:true;
+}
+
+@import "colors"
+
+* {
+    background-color: @xbg;
+    border-color: #00000000;
+    text-color: @xfg;
+    font: "Source Han Sans HC Normal 14";
+}
+
+#window {
+    fullscreen: false;
+    location: 0;
+    anchor: 9;
+    border: 0;
+    border-radius: 15px;
+    padding: 40;
+    width: 30%;
+    height: 50%;
+}
+
+#mainbox {
+    background-color: @xbg;
+    children: [inputbar, listview];
+    spacing: 10px;
+    /*margin: 20%;*/
+    padding: 10px 60px;
+    border-radius: 15px;
+    border: 1px;
+    border-color: @base0D;
+}
+
+
+#listview {
+    background-color: #e9e9e900;
+    fixed-height: 0;
+    border: 0px;
+    spacing: 5px;
+    scrollbar: false;
+    padding: 10px 10px 0px;
+}
+
+#element {
+    background-color: #e9e9e900;
+    border: 0;
+    border-radius: 4px;
+    padding: 3 0  3 4 ;
+}
+
+#element selected {
+    background-color: @xbs;
+    text-color: @xfs;
+}
+
+
+#inputbar {
+    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+    background-color: #00000000;
+}
+
+#case-indicator {
+    background-color: #00000000;
+    spacing:    0;
+}
+#entry {
+    background-color: #00000000;
+    spacing:    0;
+}
+#prompt {
+    background-color: #00000000;
+    spacing:    0;
+}
+
+#textbox-prompt-colon {
+    background-color: #00000000;
+    expand:     false;
+    str:        ":";
+    margin:     0px 0.3em 0em 0em ;
+}
