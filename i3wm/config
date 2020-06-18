@@ -220,6 +220,8 @@ for_window [class="Xfburn"] floating enable
 # Additional
 for_window [class="netease-cloud-music"] floating enable
 for_window [class="Pcmanfm"] floating enable
+for_window [class="Xarchiver"] floating enable
+
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
