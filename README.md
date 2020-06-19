@@ -30,3 +30,14 @@ The project is a backup of my i3
 - Nord Skin for PyCharm
 - Nord Skin for VSCode
 
+## Tips
+
+$mod + up, down, left, right: Switch focus among windows in the same workspace
+$mod + r: Enter resize mode, use up, down, left, right to modify the size by 10px, Esc to exit
+$mod + left click: Move floating window
+$mod + right click: Resize floating window
+
+## To Do List
+
+Network manager context menu create by rofi (base on connman ?)
+

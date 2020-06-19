@@ -2,9 +2,24 @@
 
 ## Usage
 
+Copy the font files into ~/.local/share/fonts/
+
+```shell script
+fc-cache -vf
+```
+
 ```shell script
 cp fontconfig/fonts.conf ~/.config/fontconfig/
 ```
+
+```shell script
+> fc-match "Monospace"
+Fantasque Sans Mono Regular Nerd Font Complete.ttf: "FantasqueSansMono Nerd Font" "Regular"
+> fc-match "Sans"
+GoogleSans-Regular.ttf: "Google Sans" "Regular"
+```
+
+Now you can set your IDE Editor font as Monospace or Application font as Sans.
 
 The config file change the default fonts for displaying English and Chinese. Add any other fonts in ```<prefer>``` tag as you like, as the fontconfig will auto select font to meet the requirement, is to say, the next font will be selected if the current one doesn't support the characters.
 

@@ -27,7 +27,7 @@ font xft:URWGothic-Book 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -44,7 +44,7 @@ bindsym $mod+z exec --no-startup-id morc_menu
 ################################################################################################
 
 exec --no-startup-id volumeicon
-bindsym $mod+Ctrl+m exec alacritty -e 'alsamixer'
+bindsym $mod+Ctrl+m exec kitty -e 'alsamixer'
 #exec --no-startup-id pulseaudio
 #exec --no-startup-id pa-applet
 #bindsym $mod+Ctrl+m exec pavucontrol
@@ -56,12 +56,12 @@ bindsym $mod+Ctrl+m exec alacritty -e 'alsamixer'
 # bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 
 # Start Applications
-bindsym $mod+Ctrl+b exec alacritty -e 'bmenu'
+bindsym $mod+Ctrl+b exec kitty -e 'bmenu'
 bindsym $mod+F2 exec google-chrome-stable
 bindsym $mod+F3 exec pcmanfm
 # bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
-bindsym $mod+F5 exec alacritty -e 'mocp'
+bindsym $mod+F5 exec kitty -e 'mocp'
 bindsym $mod+Shift+F5 exec toggle-display
 bindsym $mod+t exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b
@@ -221,6 +221,7 @@ for_window [class="Xfburn"] floating enable
 for_window [class="netease-cloud-music"] floating enable
 for_window [class="Pcmanfm"] floating enable
 for_window [class="Xarchiver"] floating enable
+for_window [class="kitty"] floating enable
 
 
 # switch to workspace with urgent window automatically
@@ -362,9 +363,9 @@ bindsym $mod+m bar mode toggle
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.focused          $term_background $term_background $term_foreground $term_background
-  client.focused_inactive $term_color8 $term_color8 $term_foreground $term_color8
-  client.unfocused        $term_color8 $term_color8 $term_foreground $term_color8
+  client.focused          $term_color8 $term_color8 $term_foreground $term_color8
+  client.focused_inactive $term_background $term_background $term_foreground $term_background
+  client.unfocused        $term_background $term_background $term_foreground $term_background
   client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
   client.placeholder      #222d31 #0c0c0c #ffffff #000000 
 
