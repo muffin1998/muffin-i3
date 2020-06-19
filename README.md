@@ -20,7 +20,8 @@ The project is a backup of my i3
 ## Fonts
 
 - Google Sans and Source Han Sans CN as default Sans font
-- Nerd Font Fira Code and Sarasa Mono SC as default Monospace font
+- Fantasque Sans Mono Nerd Font and Sarasa Mono SC as default Monospace font
+- Fantasque Sans Mono, Sarasa Mono SC and Iosevka Nerd Font as Polybar font
 
 ## Themes
 
@@ -28,3 +29,4 @@ The project is a backup of my i3
 - [Nord Skin for Chrome](https://chrome.google.com/webstore/detail/nord/abehfkkfjlplnjadfcjiflnejblfmmpj?utm_source=chrome-ntp-icon)
 - Nord Skin for PyCharm
 - Nord Skin for VSCode
+
