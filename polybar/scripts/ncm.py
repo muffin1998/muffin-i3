@@ -87,7 +87,7 @@ class BackgroundService(Thread):
         self._obj_path = obj_path
         self._player = Player()
         # self._playback_status_socket = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
-        self._track_information_socket_addr = TRACK_INFORMATION_SOCKET_ADDR
+        # self._track_information_socket_addr = TRACK_INFORMATION_SOCKET_ADDR
         self._sock = socket.socket(socket.AF_UNIX, socket.SOCK_DGRAM)
         self._session_bus = dbus.SessionBus()
         self._pipe = pipe
