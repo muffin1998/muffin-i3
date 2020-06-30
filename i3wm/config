@@ -70,7 +70,9 @@ bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
 bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
+bindsym $mod+Shift+a exec deepin-screen-recorder
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
+
 
 # focus_follows_mouse no
 
@@ -135,7 +137,7 @@ bindsym $mod+Shift+minus move scratchpad
 # If there are multiple scratchpad windows, this command cycles through them.
 bindsym $mod+minus scratchpad show
 
-#navigate workspaces next / previous
+# navigate workspaces next / previous
 bindsym $mod+Ctrl+Right workspace next
 bindsym $mod+Ctrl+Left workspace prev
 
@@ -222,7 +224,11 @@ for_window [class="netease-cloud-music"] floating enable
 for_window [class="Pcmanfm"] floating enable
 for_window [class="Xarchiver"] floating enable
 for_window [class="kitty"] floating enable
-
+for_window [class="vlc"] floating enable
+for_window [class="Viewnior"] floating enable
+for_window [class="Steam"] floating enable
+for_window [class="TelegramDesktop"] floating enable
+for_window [class="Typora"] floating enable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus

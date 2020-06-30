@@ -2,6 +2,11 @@
 
 The project is a backup of my i3
 
+## Features
+
+- nord color schema
+- polybar module for Netease Cloud Music
+
 ## Applications
 
 - Polybar
@@ -32,12 +37,23 @@ The project is a backup of my i3
 
 ## Tips
 
-$mod + up, down, left, right: Switch focus among windows in the same workspace
-$mod + r: Enter resize mode, use up, down, left, right to modify the size by 10px, Esc to exit
-$mod + left click: Move floating window
-$mod + right click: Resize floating window
+### i3wm
+- $mod + up, down, left, right: Switch focus among windows in the same workspace
+- $mod + Shift + up, down, left, right:
+- $mod + r: Enter resize mode, use up, down, left, right to modify the size by 10px, Esc to exit
+- $mod + left click: Move floating window
+- $mod + right click: Resize floating window
+
+### x
+
+```shell script
+xprop | grep "CLASS"
+```
 
 ## To Do List
 
 Network manager context menu create by rofi (base on connman ?)
 
+Audio output device select (pulsectl(libpulse api for python) or dbus ?)
+
+Fcitx config tool 

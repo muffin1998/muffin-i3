@@ -266,7 +266,7 @@ def display_track_information():
 
         while True:
             while not (os.path.exists(PIPE_FILE_0) and stat.S_ISFIFO(os.stat(PIPE_FILE_0).st_mode)):
-                time.sleep(1)
+                os.mkfifo(PIPE_FILE_0)
             with open(PIPE_FILE_0) as fd:
                 while True:
                     # fd = os.open(pipe_file, os.O_RDONLY)
@@ -303,9 +303,9 @@ def display_track_information():
 
 
 def display_playback_status():
-    if os.path.exists(PIPE_FILE_0):
-        os.unlink(PIPE_FILE_0)
-    os.mkfifo(PIPE_FILE_0)
+    while not (os.path.exists(PIPE_FILE_0) and stat.S_ISFIFO(os.stat(PIPE_FILE_0).st_mode)):
+        os.mkfifo(PIPE_FILE_0)
+    # os.mkfifo(PIPE_FILE_0)
     with open(PIPE_FILE_0, 'w') as fd:
         background_service = BackgroundService(BUS_NAME, OBJ_PATH, pipe=fd)
         background_service.start()
