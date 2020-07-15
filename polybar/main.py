@@ -213,7 +213,7 @@ def main():
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument("--color-config-file", type=str, default="color-light.ini")
+    parser.add_argument("--color-config-file", type=str, default="nord.ini")
     args = parser.parse_args()
     color_config_path = f'sources/colors/{args.color_config_file}'
     print(f'color file path: {color_config_path}')

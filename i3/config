@@ -57,7 +57,7 @@ bindsym $mod+Ctrl+m exec kitty -e 'alsamixer'
 
 # Start Applications
 bindsym $mod+Ctrl+b exec kitty -e 'bmenu'
-bindsym $mod+F2 exec google-chrome-stable
+bindsym $mod+F2 exec firefox
 bindsym $mod+F3 exec pcmanfm
 # bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
@@ -229,6 +229,7 @@ for_window [class="Viewnior"] floating enable
 for_window [class="Steam"] floating enable
 for_window [class="TelegramDesktop"] floating enable
 for_window [class="Typora"] floating enable
+for_window [class="Mousepad"] floating enable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus

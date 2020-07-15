@@ -10,7 +10,7 @@ configuration {
     background-color: @xbg;
     border-color: #00000000;
     text-color: @xfg;
-    font: "Source Han Sans HC Normal 14";
+    font: "Sans 14";
 }
 
 #window {
